@@ -12,8 +12,8 @@
     src = final.fetchFromGitHub {
       owner = "mrcjkb";
       repo = "rustowl";
-      rev = "e19da752a72e9f3013f82beb491f1ac5345ea076";
-      hash = "sha256-ZEUAsiwdp5whexEdaEOIw/XbRcKXt+iPHDRjufSj/as=";
+      rev = "a3f47cc1277b365bc14c23399d9e1256ed68331b";
+      hash = "sha256-nOTkGO0uYgKyYXVPC6L26hIQGygiVw9t3BT8ShoK5d8=";
       sparseCheckout = [
         "ftplugin"
         "lua"
