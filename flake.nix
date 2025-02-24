@@ -59,7 +59,10 @@
 
         packages = with pkgs; {
           default = rustowl;
-          inherit rustowl;
+          inherit
+            rustowl
+            rustowl-nvim
+            ;
         };
 
         devShells.default = pkgs.mkShell {
