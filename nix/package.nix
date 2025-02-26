@@ -20,7 +20,7 @@ in
       repo = "rustowl";
       rev = "v${version}";
       sparseCheckout = ["rustowl"];
-      hash = "sha256-va+og3rgmm1bbWPk3GQofQ8S6QKIGr39At8QyKTOA/A=";
+      hash = "sha256-f8TV99ftbgBVwFtTDP8mvJWa2upcDt3r8LkLqkjbTgg=";
     };
 
     sourceRoot = "${src.name}/rustowl";
