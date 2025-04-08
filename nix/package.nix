@@ -15,12 +15,9 @@ in
     pname = "rustowl";
     version = "0.1.4";
 
-    src = fetchFromGitHub {
-      owner = "cordx56";
-      repo = "rustowl";
+    src = fetchGit {
+      url = "ssh://git@github.com/cordx56/rustowl.git";
       rev = "v${version}";
-      sparseCheckout = ["rustowl"];
-      hash = "sha256-f8TV99ftbgBVwFtTDP8mvJWa2upcDt3r8LkLqkjbTgg=";
     };
 
     sourceRoot = "${src.name}/rustowl";
