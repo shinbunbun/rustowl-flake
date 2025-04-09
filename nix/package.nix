@@ -23,7 +23,7 @@ in
     in
       s // {name = "rustowl";};
 
-    sourceRoot = "${src.name}/rustowl";
+    sourceRoot = "${src.name}";
 
     cargoDeps = rustPlatform.fetchCargoVendor {
       inherit src sourceRoot;
