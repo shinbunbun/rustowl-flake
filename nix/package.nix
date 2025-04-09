@@ -13,6 +13,7 @@
 in
   rustPlatform.buildRustPackage rec {
     pname = "rustowl";
+    name = "rustowl";
 
     src = fetchGit {
       url = "ssh://git@github.com/cordx56/rustowl.git";
