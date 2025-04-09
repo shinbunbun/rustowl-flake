@@ -4,6 +4,7 @@
   fenix,
   rust-manifest,
   makeRustPlatform,
+  cacert,
 }: let
   toolchain = (fenix.fromManifestFile rust-manifest).completeToolchain;
   rustPlatform = makeRustPlatform {
@@ -33,7 +34,11 @@ in
 
     nativeBuildInputs = [
       toolchain
+      cacert
     ];
+
+    NIX_SSL_CERT_FILE = "${cacert}/etc/ssl/certs/ca-bundle.crt";
+    REQUESTS_CA_BUNDLE = "${cacert}/etc/ssl/certs/ca-bundle.crt";
 
     meta = with lib; {
       description = "Visualize ownership and lifetimes in Rust for debugging and optimization";
