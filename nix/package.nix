@@ -20,7 +20,7 @@ in
       rev = "58fd467581c397a86a9c60faee330ae19195d52e";
     };
 
-    sourceRoot = "rustowl/rustowl";
+    sourceRoot = "rustowl";
 
     cargoDeps = rustPlatform.fetchCargoVendor {
       inherit src sourceRoot;
